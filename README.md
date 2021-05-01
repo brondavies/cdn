@@ -64,4 +64,4 @@ e.g. `/css/app.css` becomes `/css/app-abcd1234.css` on the CDN but `/css/backgro
 ## Working Example
 
 The [example](example) folder contains a fully working version of this process methodology for a simple .NET Core web app.
-For this application you could run `cdn --containerName mycontainer --containerUrl https://storageaccountname.blob.core.windows.net/mycontainer --storageAccountConnectionString "<get this from the azure portal>"`
+For this application you could run `cdn --fileList wwwroot/content/fingerprints.json --containerName mycontainer --containerUrl https://storageaccountname.blob.core.windows.net/mycontainer --storageAccountConnectionString "<get this from the azure portal>"`
