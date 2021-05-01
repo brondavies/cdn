@@ -22,11 +22,11 @@ The build of cdn.exe relies on the .NET Framework 4.7.2. Install this first.
 
 ```js
 function getUrlForCSS(path) {
-	// read the fingerprints json file
-	var fingerprints = {}; // read this dictionary from the json file
-	// if there's an entry for path, use it, otherwise use the local path
-	var url = fingerprints[path] || path;
-	return '<link href="' + url + '" rel="stylesheet" />';
+  // read the fingerprints json file
+  var fingerprints = {}; // read this dictionary from the json file
+  // if there's an entry for path, use it, otherwise use the local path
+  var url = fingerprints[path] || path;
+  return '<link href="' + url + '" rel="stylesheet" />';
 }
 ```
 
@@ -34,8 +34,8 @@ function getUrlForCSS(path) {
 
 ```json
 {
-	"/dist/css/app.css": "",
-	"/dist/js/app.js": ""
+  "/dist/css/app.css": "",
+  "/dist/js/app.js": ""
 }
 ```
 
