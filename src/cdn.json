@@ -1,0 +1,9 @@
+{
+  /* REQUIRED settings */
+  "containerName": "", // the name of the Azure storage container
+  "containerUrl": "", // the final root URL for the CDN
+  "storageAccountConnectionString": "", // the Azure storage account connection string, you can get this from the Azure portal
+  /* OPTIONAL settings */
+  "fileList": "", // The location of the fingerprints json file
+  "extensions": ".css,.eot,.gif,.jpeg,.jpg,.js,.map,.otf,.png,.svg,.ttf,.woff,.woff2,.xsl" // these are the file types that will be uploaded from the source folder
+}
