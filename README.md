@@ -22,11 +22,11 @@ The build of cdn.exe relies on the .NET Framework 4.7.2. Install this first.
 
 ```js
 function getUrlForCSS(path) {
-	// read the fingerprints json file
-	var fingerprints = {}; // read this dictionary from the json file
-	// if there's an entry for path, use it, otherwise use the local path
-	var url = fingerprints[path] || path;
-	return '<link href="' + url + '" rel="stylesheet" />';
+  // read the fingerprints json file
+  var fingerprints = {}; // read this dictionary from the json file
+  // if there's an entry for path, use it, otherwise use the local path
+  var url = fingerprints[path] || path;
+  return '<link href="' + url + '" rel="stylesheet" />';
 }
 ```
 
@@ -34,8 +34,8 @@ function getUrlForCSS(path) {
 
 ```json
 {
-	"/dist/css/app.css": "",
-	"/dist/js/app.js": ""
+  "/dist/css/app.css": "",
+  "/dist/js/app.js": ""
 }
 ```
 
@@ -64,4 +64,4 @@ e.g. `/css/app.css` becomes `/css/app-abcd1234.css` on the CDN but `/css/backgro
 ## Working Example
 
 The [example](example) folder contains a fully working version of this process methodology for a simple .NET Core web app.
-For this application you could run `cdn --containerName mycontainer --containerUrl https://storageaccountname.blob.core.windows.net/mycontainer --storageAccountConnectionString "<get this from the azure portal>"`
+For this application you could run `cdn --fileList wwwroot/content/fingerprints.json --containerName mycontainer --containerUrl https://storageaccountname.blob.core.windows.net/mycontainer --storageAccountConnectionString "<get this from the azure portal>"`
