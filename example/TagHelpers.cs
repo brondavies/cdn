@@ -26,7 +26,7 @@ namespace example.TagHelpers
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.TagName = "script";
-            output.Attributes.SetAttribute("type", "javascript");
+            output.Attributes.SetAttribute("type", "text/javascript");
             output.Attributes.SetAttribute("src", CDN.Url(src));
         }
     }
